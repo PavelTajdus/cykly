@@ -58,5 +58,16 @@ foreach ($zaci as $zak) {
 }
 
 foreach ($zaci as $klic => $hodnota) {
+
+    // continue přeskočí dané opakování smyčky a pokračuje na další opakování
+    if ($klic == "Terka") {
+        continue;
+    }
+
+    // break ukončí provádění celé smyčky foreach
+    if ($klic == "Pavel") {
+        break;
+    }
+
     echo "Klíč " . $klic . " má hodnotu: " . $hodnota . "<br>";
 }
